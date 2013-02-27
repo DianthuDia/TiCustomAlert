@@ -2,7 +2,7 @@
 
 ## Description
 
-TODO: Enter your module description here
+Providing 'iOSViews' property on AlertDialog.
 
 ## Accessing the customalert Module
 
@@ -14,26 +14,18 @@ The customalert variable is a reference to the Module object.
 
 ## Reference
 
-TODO: If your module has an API, you should document
-the reference here.
-
-### ___PROJECTNAMEASIDENTIFIER__.function
-
-TODO: This is an example of a module function.
-
-### ___PROJECTNAMEASIDENTIFIER__.property
-
-TODO: This is an example of a module property.
+### customalert.createAlertDialog
+* iOSView
+  * similar 'androidView' on iOS
 
 ## Usage
 
-TODO: Enter your usage example here
+See 'exapmle/app.js'
 
 ## Author
 
-TODO: Enter your author name, email and other contact
-details you want to share here. 
+DianthuDia
 
 ## License
 
-TODO: Enter your license/legal information here.
+MIT License

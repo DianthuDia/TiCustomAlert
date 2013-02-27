@@ -4,10 +4,10 @@
 #
 version: 0.0.1
 apiversion: 2
-description: My module
+description: provide 'iOSViews' property on AlertDialog
 author: DianthuDia
-license: Specify your license
-copyright: Copyright (c) 2013 by Your Company
+license: MIT
+copyright: Copyright (c) 2013 by DianthuDia
 
 
 # these should not be edited
