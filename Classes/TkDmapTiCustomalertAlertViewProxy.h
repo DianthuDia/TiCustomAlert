@@ -5,11 +5,10 @@
  * Please see the LICENSE included with this distribution for details.
  */
 #import "TiViewProxy.h"
-#import "ImageAlertView.h"
 
 @interface TkDmapTiCustomalertAlertViewProxy : TiViewProxy {
 @protected
-	ImageAlertView *alert;
+	UIAlertView *alert;
 }
 
 @end
