@@ -119,6 +119,13 @@ static BOOL alertShowing = NO;
         
 		[alert setCancelButtonIndex:[TiUtils intValue:[self valueForKey:@"cancel"] def:-1]];
 		
+            // 'iOSView' property
+        TiViewProxy* iOSViewProxy = [self valueForKey:@"iOSView"];
+        if (iOSViewProxy != nil)
+            {
+            [alert addSubview:[iOSViewProxy view]];
+            }
+        
 		[self retain];
 		[alert show];
         }
@@ -145,6 +152,52 @@ static BOOL alertShowing = NO;
 							   [NSNumber numberWithInt:[alertView cancelButtonIndex]],@"cancel",
 							   nil];
 		[self fireEvent:@"click" withObject:event];
+        }
+}
+
+- (void)willPresentAlertView:(UIAlertView *)alertView
+{
+        // Find "TiUIView" and "UILabel"
+    CGFloat tiHeight = 0;
+    UIView* tiView = nil;
+    UIView* lastLabelView = nil;
+    for (UIView* subView in alertView.subviews)
+        {
+        if ([subView isKindOfClass:NSClassFromString(@"TiUIView")])
+            {
+            tiView = subView;
+            tiHeight = tiView.frame.size.height;
+            }
+        if ([subView isKindOfClass:NSClassFromString(@"UILabel")])
+            {
+            lastLabelView = subView;
+            }
+        }
+
+        // Expand UIAlertView
+    CGRect frame = alertView.frame;
+    alertView.frame = CGRectMake(frame.origin.x, frame.origin.y - tiHeight/2,
+                                 frame.size.width, frame.size.height + tiHeight);
+
+        // Move buttonView
+    for (UIView* subView in alertView.subviews)
+        {
+        if ([subView isKindOfClass:NSClassFromString(@"UIThreePartButton")] ||  // 4.x
+            [subView isKindOfClass:NSClassFromString(@"UIAlertButton")])    // > 5.x
+            {
+            CGRect frame = subView.frame;
+            subView.frame = CGRectMake(frame.origin.x, frame.origin.y + tiHeight,
+                                       frame.size.width, frame.size.height);
+            }
+    }
+    
+        // Move TiUIView
+    if (tiView != nil)
+        {
+        CGRect frame = tiView.frame;
+        CGFloat y = (lastLabelView==nil)? -alertView.frame.size.height/2 + frame.size.height:
+            lastLabelView.frame.origin.y + lastLabelView.frame.size.height; // bottom of frame of label
+        tiView.frame = CGRectMake(frame.origin.x, frame.origin.y+y, frame.size.width, frame.size.height);
         }
 }
 

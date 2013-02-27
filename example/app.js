@@ -21,11 +21,16 @@ label.text = customalert.example();
 Ti.API.info("module exampleProp is => " + customalert.exampleProp);
 customalert.exampleProp = "This is a test value";
 
+var alertView = Ti.UI.createView({layout: 'horizontal', top: 0, height: 200});	// DON'T USE 'Ti.UI.SIZE'
+
+var btn = Ti.UI.createButton({title: 'Hello', width: 100, height: 200});
+alertView.add(btn);
 
 var alertDialog = customalert.createAlertView({
-    title: 'Cancle Test',
+	iOSView: alertView,
+    title: 'CustomAlert',
     message: 'Test',
-    buttonNames: ['OK','Cancle']
+    buttonNames: ['OK', 'Later', 'Cancel']
 });
 alertDialog.show();
 
