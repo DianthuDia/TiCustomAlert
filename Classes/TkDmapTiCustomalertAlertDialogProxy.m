@@ -5,14 +5,14 @@
  * Please see the LICENSE included with this distribution for details.
  */
 
-#import "TkDmapTiCustomalertAlertViewProxy.h"
+#import "TkDmapTiCustomalertAlertDialogProxy.h"
 #import "TiUtils.h"
 
 static NSCondition* alertCondition;
 static BOOL alertShowing = NO;
 
     // copy from TiUIAlertDialogProxy.m
-@implementation TkDmapTiCustomalertAlertViewProxy
+@implementation TkDmapTiCustomalertAlertDialogProxy
 -(void)_destroy
 {
     if (alert != nil) {

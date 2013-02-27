@@ -6,9 +6,9 @@
  */
 #import "TiViewProxy.h"
 
-@interface TkDmapTiCustomalertAlertViewProxy : TiViewProxy {
+@interface TkDmapTiCustomalertAlertDialogProxy : TiViewProxy {
 @protected
-	UIAlertView *alert;
+	UIAlertView *alert; // TiUIAlertDialogProxy's privated
 }
 
 @end

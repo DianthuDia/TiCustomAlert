@@ -26,7 +26,7 @@ var alertView = Ti.UI.createView({layout: 'horizontal', top: 0, height: 200});	/
 var btn = Ti.UI.createButton({title: 'Hello', width: 100, height: 200});
 alertView.add(btn);
 
-var alertDialog = customalert.createAlertView({
+var alertDialog = customalert.createAlertDialog({
 	iOSView: alertView,
     title: 'CustomAlert',
     message: 'Test',

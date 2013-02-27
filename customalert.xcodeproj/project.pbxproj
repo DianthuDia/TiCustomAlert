@@ -28,8 +28,8 @@
 		24DE9E1211C5FE74003F90F6 /* TkDmapTiCustomalertModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* TkDmapTiCustomalertModuleAssets.m */; };
 		AA747D9F0F9514B9006C5449 /* TkDmapTiCustomalert_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TkDmapTiCustomalert_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
-		AEE42BD816DE39B8007964CD /* TkDmapTiCustomalertAlertViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = AEE42BD616DE39B8007964CD /* TkDmapTiCustomalertAlertViewProxy.h */; };
-		AEE42BD916DE39B8007964CD /* TkDmapTiCustomalertAlertViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE42BD716DE39B8007964CD /* TkDmapTiCustomalertAlertViewProxy.m */; };
+		AEE42BD816DE39B8007964CD /* TkDmapTiCustomalertAlertDialogProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = AEE42BD616DE39B8007964CD /* TkDmapTiCustomalertAlertDialogProxy.h */; };
+		AEE42BD916DE39B8007964CD /* TkDmapTiCustomalertAlertDialogProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE42BD716DE39B8007964CD /* TkDmapTiCustomalertAlertDialogProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +50,8 @@
 		24DE9E1011C5FE74003F90F6 /* TkDmapTiCustomalertModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TkDmapTiCustomalertModuleAssets.m; path = Classes/TkDmapTiCustomalertModuleAssets.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* TkDmapTiCustomalert_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TkDmapTiCustomalert_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		AEE42BD616DE39B8007964CD /* TkDmapTiCustomalertAlertViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TkDmapTiCustomalertAlertViewProxy.h; path = Classes/TkDmapTiCustomalertAlertViewProxy.h; sourceTree = "<group>"; };
-		AEE42BD716DE39B8007964CD /* TkDmapTiCustomalertAlertViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TkDmapTiCustomalertAlertViewProxy.m; path = Classes/TkDmapTiCustomalertAlertViewProxy.m; sourceTree = "<group>"; };
+		AEE42BD616DE39B8007964CD /* TkDmapTiCustomalertAlertDialogProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TkDmapTiCustomalertAlertDialogProxy.h; path = Classes/TkDmapTiCustomalertAlertDialogProxy.h; sourceTree = "<group>"; };
+		AEE42BD716DE39B8007964CD /* TkDmapTiCustomalertAlertDialogProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TkDmapTiCustomalertAlertDialogProxy.m; path = Classes/TkDmapTiCustomalertAlertDialogProxy.m; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libTkDmapTiCustomalert.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTkDmapTiCustomalert.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -97,8 +97,8 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				AEE42BD616DE39B8007964CD /* TkDmapTiCustomalertAlertViewProxy.h */,
-				AEE42BD716DE39B8007964CD /* TkDmapTiCustomalertAlertViewProxy.m */,
+				AEE42BD616DE39B8007964CD /* TkDmapTiCustomalertAlertDialogProxy.h */,
+				AEE42BD716DE39B8007964CD /* TkDmapTiCustomalertAlertDialogProxy.m */,
 				24DE9E0F11C5FE74003F90F6 /* TkDmapTiCustomalertModuleAssets.h */,
 				24DE9E1011C5FE74003F90F6 /* TkDmapTiCustomalertModuleAssets.m */,
 				24DD6CF71134B3F500162E58 /* TkDmapTiCustomalertModule.h */,
@@ -126,7 +126,7 @@
 				AA747D9F0F9514B9006C5449 /* TkDmapTiCustomalert_Prefix.pch in Headers */,
 				24DD6CF91134B3F500162E58 /* TkDmapTiCustomalertModule.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* TkDmapTiCustomalertModuleAssets.h in Headers */,
-				AEE42BD816DE39B8007964CD /* TkDmapTiCustomalertAlertViewProxy.h in Headers */,
+				AEE42BD816DE39B8007964CD /* TkDmapTiCustomalertAlertDialogProxy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +199,7 @@
 			files = (
 				24DD6CFA1134B3F500162E58 /* TkDmapTiCustomalertModule.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* TkDmapTiCustomalertModuleAssets.m in Sources */,
-				AEE42BD916DE39B8007964CD /* TkDmapTiCustomalertAlertViewProxy.m in Sources */,
+				AEE42BD916DE39B8007964CD /* TkDmapTiCustomalertAlertDialogProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
