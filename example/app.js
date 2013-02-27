@@ -21,6 +21,14 @@ label.text = customalert.example();
 Ti.API.info("module exampleProp is => " + customalert.exampleProp);
 customalert.exampleProp = "This is a test value";
 
+
+var alertDialog = customalert.createAlertView({
+    title: 'Cancle Test',
+    message: 'Test',
+    buttonNames: ['OK','Cancle']
+});
+alertDialog.show();
+
 if (Ti.Platform.name == "android") {
 	var proxy = customalert.createExample({
 		message: "Creating an example Proxy",

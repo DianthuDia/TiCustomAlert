@@ -28,6 +28,12 @@
 		24DE9E1211C5FE74003F90F6 /* TkDmapTiCustomalertModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* TkDmapTiCustomalertModuleAssets.m */; };
 		AA747D9F0F9514B9006C5449 /* TkDmapTiCustomalert_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TkDmapTiCustomalert_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		AEE42BD416DE3989007964CD /* TkDmapTiCustomalertAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = AEE42BD216DE3989007964CD /* TkDmapTiCustomalertAlertView.h */; };
+		AEE42BD516DE3989007964CD /* TkDmapTiCustomalertAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE42BD316DE3989007964CD /* TkDmapTiCustomalertAlertView.m */; };
+		AEE42BD816DE39B8007964CD /* TkDmapTiCustomalertAlertViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = AEE42BD616DE39B8007964CD /* TkDmapTiCustomalertAlertViewProxy.h */; };
+		AEE42BD916DE39B8007964CD /* TkDmapTiCustomalertAlertViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE42BD716DE39B8007964CD /* TkDmapTiCustomalertAlertViewProxy.m */; };
+		AEE42BDE16DE413C007964CD /* ImageAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = AEE42BDC16DE413B007964CD /* ImageAlertView.h */; };
+		AEE42BDF16DE413C007964CD /* ImageAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE42BDD16DE413C007964CD /* ImageAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,19 +42,25 @@
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
-			remoteInfo = "customalert";
+			remoteInfo = customalert;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24DD6CF71134B3F500162E58 /* TkDmapTiCustomalertModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TkDmapTiCustomalertModule.h"; path = "Classes/TkDmapTiCustomalertModule.h"; sourceTree = "<group>"; };
-		24DD6CF81134B3F500162E58 /* TkDmapTiCustomalertModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TkDmapTiCustomalertModule.m"; path = "Classes/TkDmapTiCustomalertModule.m"; sourceTree = "<group>"; };
+		24DD6CF71134B3F500162E58 /* TkDmapTiCustomalertModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TkDmapTiCustomalertModule.h; path = Classes/TkDmapTiCustomalertModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* TkDmapTiCustomalertModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TkDmapTiCustomalertModule.m; path = Classes/TkDmapTiCustomalertModule.m; sourceTree = "<group>"; };
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
-		24DE9E0F11C5FE74003F90F6 /* TkDmapTiCustomalertModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TkDmapTiCustomalertModuleAssets.h"; path = "Classes/TkDmapTiCustomalertModuleAssets.h"; sourceTree = "<group>"; };
-		24DE9E1011C5FE74003F90F6 /* TkDmapTiCustomalertModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TkDmapTiCustomalertModuleAssets.m"; path = "Classes/TkDmapTiCustomalertModuleAssets.m"; sourceTree = "<group>"; };
-		AA747D9E0F9514B9006C5449 /* TkDmapTiCustomalert_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TkDmapTiCustomalert_Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		24DE9E0F11C5FE74003F90F6 /* TkDmapTiCustomalertModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TkDmapTiCustomalertModuleAssets.h; path = Classes/TkDmapTiCustomalertModuleAssets.h; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* TkDmapTiCustomalertModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TkDmapTiCustomalertModuleAssets.m; path = Classes/TkDmapTiCustomalertModuleAssets.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* TkDmapTiCustomalert_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TkDmapTiCustomalert_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D2AAC07E0554694100DB518D /* libTkDmapTiCustomalert.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTkDmapTiCustomalert.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEE42BD216DE3989007964CD /* TkDmapTiCustomalertAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TkDmapTiCustomalertAlertView.h; path = Classes/TkDmapTiCustomalertAlertView.h; sourceTree = "<group>"; };
+		AEE42BD316DE3989007964CD /* TkDmapTiCustomalertAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TkDmapTiCustomalertAlertView.m; path = Classes/TkDmapTiCustomalertAlertView.m; sourceTree = "<group>"; };
+		AEE42BD616DE39B8007964CD /* TkDmapTiCustomalertAlertViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TkDmapTiCustomalertAlertViewProxy.h; path = Classes/TkDmapTiCustomalertAlertViewProxy.h; sourceTree = "<group>"; };
+		AEE42BD716DE39B8007964CD /* TkDmapTiCustomalertAlertViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TkDmapTiCustomalertAlertViewProxy.m; path = Classes/TkDmapTiCustomalertAlertViewProxy.m; sourceTree = "<group>"; };
+		AEE42BDC16DE413B007964CD /* ImageAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageAlertView.h; path = Classes/ImageAlertView.h; sourceTree = "<group>"; };
+		AEE42BDD16DE413C007964CD /* ImageAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageAlertView.m; path = Classes/ImageAlertView.m; sourceTree = "<group>"; };
+		D2AAC07E0554694100DB518D /* libTkDmapTiCustomalert.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTkDmapTiCustomalert.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +91,7 @@
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
-			name = "customalert";
+			name = customalert;
 			sourceTree = "<group>";
 		};
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
@@ -93,6 +105,12 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AEE42BDC16DE413B007964CD /* ImageAlertView.h */,
+				AEE42BDD16DE413C007964CD /* ImageAlertView.m */,
+				AEE42BD216DE3989007964CD /* TkDmapTiCustomalertAlertView.h */,
+				AEE42BD316DE3989007964CD /* TkDmapTiCustomalertAlertView.m */,
+				AEE42BD616DE39B8007964CD /* TkDmapTiCustomalertAlertViewProxy.h */,
+				AEE42BD716DE39B8007964CD /* TkDmapTiCustomalertAlertViewProxy.m */,
 				24DE9E0F11C5FE74003F90F6 /* TkDmapTiCustomalertModuleAssets.h */,
 				24DE9E1011C5FE74003F90F6 /* TkDmapTiCustomalertModuleAssets.m */,
 				24DD6CF71134B3F500162E58 /* TkDmapTiCustomalertModule.h */,
@@ -120,6 +138,9 @@
 				AA747D9F0F9514B9006C5449 /* TkDmapTiCustomalert_Prefix.pch in Headers */,
 				24DD6CF91134B3F500162E58 /* TkDmapTiCustomalertModule.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* TkDmapTiCustomalertModuleAssets.h in Headers */,
+				AEE42BD416DE3989007964CD /* TkDmapTiCustomalertAlertView.h in Headers */,
+				AEE42BD816DE39B8007964CD /* TkDmapTiCustomalertAlertViewProxy.h in Headers */,
+				AEE42BDE16DE413C007964CD /* ImageAlertView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +159,8 @@
 			);
 			dependencies = (
 			);
-			name = "customalert";
-			productName = "customalert";
+			name = customalert;
+			productName = customalert;
 			productReference = D2AAC07E0554694100DB518D /* libTkDmapTiCustomalert.a */;
 			productType = "com.apple.product-type.library.static";
 		};
@@ -192,6 +213,9 @@
 			files = (
 				24DD6CFA1134B3F500162E58 /* TkDmapTiCustomalertModule.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* TkDmapTiCustomalertModuleAssets.m in Sources */,
+				AEE42BD516DE3989007964CD /* TkDmapTiCustomalertAlertView.m in Sources */,
+				AEE42BD916DE39B8007964CD /* TkDmapTiCustomalertAlertViewProxy.m in Sources */,
+				AEE42BDF16DE413C007964CD /* ImageAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,11 +245,11 @@
 				"ARCHS[sdk=iphonesimulator*]" = i386;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DSTROOT = "/tmp/TkDmapTiCustomalert.dst";
+				DSTROOT = /tmp/TkDmapTiCustomalert.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TkDmapTiCustomalert_Prefix.pch";
+				GCC_PREFIX_HEADER = TkDmapTiCustomalert_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -244,7 +268,7 @@
 					"-DTI_POST_1_2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "TkDmapTiCustomalert";
+				PRODUCT_NAME = TkDmapTiCustomalert;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -267,11 +291,11 @@
 					armv7,
 				);
 				"ARCHS[sdk=iphonesimulator*]" = i386;
-				DSTROOT = "/tmp/TkDmapTiCustomalert.dst";
+				DSTROOT = /tmp/TkDmapTiCustomalert.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TkDmapTiCustomalert_Prefix.pch";
+				GCC_PREFIX_HEADER = TkDmapTiCustomalert_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -288,7 +312,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "TkDmapTiCustomalert";
+				PRODUCT_NAME = TkDmapTiCustomalert;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -310,11 +334,11 @@
 				"ARCHS[sdk=iphonesimulator*]" = i386;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DSTROOT = "/tmp/TkDmapTiCustomalert.dst";
+				DSTROOT = /tmp/TkDmapTiCustomalert.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TkDmapTiCustomalert_Prefix.pch";
+				GCC_PREFIX_HEADER = TkDmapTiCustomalert_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -332,7 +356,7 @@
 					"-DTI_POST_1_2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "TkDmapTiCustomalert";
+				PRODUCT_NAME = TkDmapTiCustomalert;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -355,11 +379,11 @@
 					armv7,
 				);
 				"ARCHS[sdk=iphonesimulator*]" = i386;
-				DSTROOT = "/tmp/TkDmapTiCustomalert.dst";
+				DSTROOT = /tmp/TkDmapTiCustomalert.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TkDmapTiCustomalert_Prefix.pch";
+				GCC_PREFIX_HEADER = TkDmapTiCustomalert_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -375,7 +399,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "TkDmapTiCustomalert";
+				PRODUCT_NAME = TkDmapTiCustomalert;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
