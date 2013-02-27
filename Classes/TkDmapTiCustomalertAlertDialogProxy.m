@@ -195,7 +195,7 @@ static BOOL alertShowing = NO;
     if (tiView != nil)
         {
         CGRect frame = tiView.frame;
-        CGFloat y = (lastLabelView==nil)? -alertView.frame.size.height/2 + frame.size.height:
+        CGFloat y = (lastLabelView==nil)? 0:
             lastLabelView.frame.origin.y + lastLabelView.frame.size.height; // bottom of frame of label
         tiView.frame = CGRectMake(frame.origin.x, frame.origin.y+y, frame.size.width, frame.size.height);
         }
