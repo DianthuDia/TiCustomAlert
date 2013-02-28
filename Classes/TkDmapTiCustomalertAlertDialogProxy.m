@@ -11,6 +11,8 @@
 static NSCondition* alertCondition;
 static BOOL alertShowing = NO;
 
+const int EXPANDED_TAG = 1000;
+
     // copy from TiUIAlertDialogProxy.m
 @implementation TkDmapTiCustomalertAlertDialogProxy
 -(void)_destroy
@@ -157,6 +159,11 @@ static BOOL alertShowing = NO;
 
 - (void)willPresentAlertView:(UIAlertView *)alertView
 {
+    if(alertView.tag == EXPANDED_TAG)
+        {
+        return;
+        }
+    
         // Find "TiUIView" and "UILabel"
     CGFloat tiHeight = 0;
     UIView* tiView = nil;
@@ -199,6 +206,9 @@ static BOOL alertShowing = NO;
             lastLabelView.frame.origin.y + lastLabelView.frame.size.height; // bottom of frame of label
         tiView.frame = CGRectMake(frame.origin.x, frame.origin.y+y, frame.size.width, frame.size.height);
         }
+    
+        // Mark expanted
+    alertView.tag = EXPANDED_TAG;
 }
 
 @end

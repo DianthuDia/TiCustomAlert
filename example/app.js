@@ -16,3 +16,6 @@ var alertDialog = customalert.createAlertDialog({
     buttonNames: ['OK', 'Later', 'Cancel']
 });
 alertDialog.show();
+
+// 'willPresentAlertView' is called only once
+alert('Expanded only once');
